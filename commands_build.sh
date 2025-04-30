@@ -3,9 +3,10 @@
 rm -rf .repo/local_manifests; \
 
 #repo init --depth=1 -u https://github.com/crdroidandroid/android -b 15.0 --git-lfs; \
-repo init --depth=1 https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs; \
+#repo init --depth=1 https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs; \
 #repo init --depth=1 -u https://github.com/ProjectMatrixx/android -b 15.0 --git-lfs; \
 #repo init --depth=1 -u https://github.com/RisingOS-Revived/android -b fifteen --git-lfs; \
+repo init --depth=1 -u https://github.com/alphadroid-project/manifest -b alpha-15.1 --git-lfs
 
 /opt/crave/resync.sh; \
 
@@ -29,14 +30,4 @@ git clone https://codeberg.org/rik/keys.git vendor/lineage-priv/keys; \
 #git clone https://codeberg.org/rik/keys.git -b inf vendor/infinity-priv/keys; \
 
 . build/envsetup.sh; \
-breakfast munch
-croot
-brunch munch
-#lunch infinity_munch-userdebug && mka bacon; \
-#riseup munch userdebug && rise b
-
-#cd out/target/product && mv munch gapps && cd ../../..; \
-#cd device/xiaomi/munch && rm -rf infinity_munch.mk && mv vanilla.txt infinity_munch.mk && cd ../../..; \
-#. build/envsetup.sh; \
-#lunch infinity_munch-userdebug && mka bacon; \
-#cd out/target/product && mv munch vanilla && cd ../../..;\
+brunch alpha_munch-user
