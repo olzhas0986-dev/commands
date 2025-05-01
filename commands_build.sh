@@ -23,19 +23,19 @@ rm -rf vendor/xiaomi/miuicamera
 rm -rf packages/resources/devicesettings
 rm -rf packages/apps/ViPER4AndroidFX; \
 
-git clone https://github.com/olzhas0986-dev/device_xiaomi_munch device/xiaomi/munch; \
-git clone https://github.com/olzhas0986-dev/device_xiaomi_sm8250-common device/xiaomi/sm8250-common; \
+git clone https://github.com/olzhas0986-dev/dxm device/xiaomi/munch; \
+git clone https://gitlab.com/rik-x777/device_xiaomi_sm8250-common.git device/xiaomi/sm8250-common; \
 git clone https://github.com/Pureline-Kernel/pure_xiaomi_sm8250.git kernel/xiaomi/sm8250; \
-git clone https://codeberg.org/rik/vendor_xiaomi_munch.git vendor/xiaomi/munch; \
-git clone https://github.com/olzhas0986-dev/vendor_xiaomi_sm8250-common vendor/xiaomi/sm8250-common; \
-git clone https://github.com/olzhas0986-dev/android_hardware_xiaomi -b lineage-22.2 hardware/xiaomi; \
+git clone https://gitlab.com/rik-x777/vendor_xiaomi_munch vendor/xiaomi/munch; \
+git clone https://gitlab.com/rik-x777/vendor_xiaomi_sm8250-common vendor/xiaomi/sm8250-common; \
+git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.2 hardware/xiaomi; \
 git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera.git -b vic vendor/xiaomi/miuicamera; \
 git clone https://github.com/PocoF3Releases/packages_resources_devicesettings.git packages/resources/devicesettings; \
 git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX; \
 
-rm -rf vendor/lineage-priv/keys && rm -rf vendor/infinity-priv/keys; \
+#rm -rf vendor/lineage-priv/keys && rm -rf vendor/infinity-priv/keys; \
 
-git clone https://codeberg.org/rik/keys.git vendor/lineage-priv/keys; \
+#git clone https://codeberg.org/rik/keys.git vendor/lineage-priv/keys; \
 #git clone https://codeberg.org/rik/keys.git -b inf vendor/infinity-priv/keys; \
 
 . build/envsetup.sh; \
