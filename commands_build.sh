@@ -24,7 +24,7 @@ rm -rf packages/resources/devicesettings
 rm -rf packages/apps/ViPER4AndroidFX; \
 
 git clone https://github.com/olzhas0986-dev/dxm device/xiaomi/munch; \
-git clone https://gitlab.com/rik-x777/device_xiaomi_sm8250-common.git device/xiaomi/sm8250-common; \
+git clone https://github.com/olzhas0986-dev/dxsc device/xiaomi/sm8250-common; \
 git clone https://github.com/Pureline-Kernel/pure_xiaomi_sm8250.git kernel/xiaomi/sm8250; \
 git clone https://gitlab.com/rik-x777/vendor_xiaomi_munch vendor/xiaomi/munch; \
 git clone https://gitlab.com/rik-x777/vendor_xiaomi_sm8250-common vendor/xiaomi/sm8250-common; \
