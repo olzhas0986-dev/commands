@@ -39,4 +39,4 @@ git clone https://github.com/PocoF3Releases/packages_resources_devicesettings.gi
 
 # Building: Infinity-X
 . build/envsetup.sh; \
-lunch infinity_munch-userdebug
+lunch infinity_munch-userdebug && mka bacon
