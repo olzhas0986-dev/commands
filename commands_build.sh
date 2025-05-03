@@ -37,13 +37,6 @@ git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera.git -
 git clone https://github.com/PocoF3Releases/packages_resources_devicesettings.git packages/resources/devicesettings; \
 ######## End
 
-# Useless stuff
-export BUILD_USERNAME=olzhas0986
-export BUILD_HOSTNAME=crave
-export TZ=Asia/Atyrau
-######### End
-
 # Building: Infinity-X
 . build/envsetup.sh; \
-lunch infinity_munch-user
-######### End
+lunch infinity_munch-userdebug
