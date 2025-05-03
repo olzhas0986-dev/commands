@@ -37,7 +37,13 @@ git clone https://github.com/olzhas0986-dev/android_device_xiaomi_munch.git -b v
 #git clone https://github.com/PocoF3Releases/packages_resources_devicesettings.git packages/resources/devicesettings; \
 ######## End
 
+# Useless stuff
+export BUILD_USERNAME=olzhas0986
+export BUILD_HOSTNAME=crave
+export TZ=Asia/Atyrau
+######### End
+
 # Building: VoltageOS
 . build/envsetup.sh; \
 brunch munch
-######## End
+######### End
