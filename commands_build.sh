@@ -4,7 +4,7 @@
 rm -rf .repo/local_manifests; \
 
 # Init ROM
-repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 15 -g default,-mips,-darwin,-notdefault; \
+repo init -u https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs; \
 
 # repo sync
 /opt/crave/resync.sh; \
@@ -24,7 +24,7 @@ rm -rf packages/apps/ViPER4AndroidFX; \
 ######### End
 
 # Cloning new device specific repos
-git clone https://github.com/olzhas0986-dev/android_device_xiaomi_munch.git -b infinity device/xiaomi/munch; \
+git clone https://github.com/olzhas0986-dev/android_device_xiaomi_munch.git device/xiaomi/munch; \
 
 git clone https://github.com/Pureline-Kernel/pure_xiaomi_sm8250.git kernel/xiaomi/munch; \
 
@@ -37,6 +37,7 @@ git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera.git -
 git clone https://github.com/PocoF3Releases/packages_resources_devicesettings.git packages/resources/devicesettings; \
 ######## End
 
-# Building: Infinity-X
+# Building: LineageOS
 . build/envsetup.sh; \
-lunch infinity_munch-userdebug && mka bacon
+breakfast munch; \
+brunch munch
