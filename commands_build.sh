@@ -26,7 +26,7 @@ rm -rf packages/apps/ViPER4AndroidFX; \
 # Cloning new device specific repos
 git clone https://github.com/olzhas0986-dev/android_device_xiaomi_munch.git -b aosp device/xiaomi/munch; \
 
-git clone https://github.com/Pureline-Kernel/pure_xiaomi_sm8250.git kernel/xiaomi/munch; \
+git clone https://github.com/olzhas0986-dev/kernel_xiaomi_sm8250 kernel/xiaomi/munch; \
 
 git clone https://github.com/munch-devs/android_vendor_xiaomi_munch.git vendor/xiaomi/munch; \
 
