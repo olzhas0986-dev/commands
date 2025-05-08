@@ -9,7 +9,7 @@ rm -rf .repo/local_manifests; \
 repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs; \
 
 # repo sync
-#/opt/crave/resync.sh; \
+/opt/crave/resync.sh; \
 
 # Removing old device specific repos
 rm -rf out/target/product/munch
