@@ -1,42 +1,33 @@
-#!/bin/bash
+#! /bin/bash
 
-# Removing local_manifests
 rm -rf .repo/local_manifests; \
 
-# Init
-repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs; \
+#/opt/crave/resync.sh; \
 
-# repo sync
-/opt/crave/resync.sh; \
+rm -rf out/target/product/munch && rm -rf device/xiaomi/munch && rm -rf device/xiaomi/sm8250-common && rm -rf kernel/xiaomi/sm8250; \
+rm -rf vendor/xiaomi/munch && rm -rf vendor/xiaomi/sm8250-common && rm -rf hardware/xiaomi && rm -rf vendor/xiaomi/munch-firmware; \
+rm -rf vendor/xiaomi/miuicamera && rm -rf packages/resources/devicesettings && rm -rf packages/apps/ViPER4AndroidFX; \
 
-# Removing old device specific repos
-rm -rf out/target/product/munch
-rm -rf kernel/xiaomi/munch
-rm -rf device/xiaomi/munch
-rm -rf vendor/xiaomi/munch
-rm -rf hardware/xiaomi
-rm -rf vendor/xiaomi/miuicamera 
-rm -rf packages/resources/devicesettings
-rm -rf packages/apps/ViPER4AndroidFX; \
-######### End
+git clone https://github.com/olzhas0986-dev/device_xiaomi_munch device/xiaomi/munch; \
 
-# Cloning new device specific repos
-git clone device/xiaomi/munch; \
+git clone https://github.com/olzhas0986-dev/device_xiaomi_sm8250-common.git device/xiaomi/sm8250-common; \
 
-git clone  kernel/xiaomi/munch; \
+git clone https://gitlab.com/rik-x777/vendor_xiaomi_munch vendor/xiaomi/munch; \
 
-git clone  vendor/xiaomi/munch; \
+git clone https://gitlab.com/rik-x777/vendor_xiaomi_sm8250-common vendor/xiaomi/sm8250-common; \
 
-git clone  hardware/xiaomi; \
+git clone https://gitlab.com/rik-x777/vendor_xiaomi_munch-firmware vendor/xiaomi/munch-firmware; \
 
-git clone  vendor/xiaomi/miuicamera; \
+git clone https://github.com/Pureline-Kernel/pure_xiaomi_sm8250.git kernel/xiaomi/sm8250; \
 
-git clone https://github.com/PocoF3Releases/packages_resources_devicesettings.git packages/resources/devicesettings; \
+git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi; \
 
-git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX; \
-######## End
+git clone https://github.com/PocoF3Releases/packages_resources_devicesettings packages/resources/devicesettings; \
 
-# Useless shit
+git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX packages/apps/ViPER4AndroidFX; \
+
+git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera vendor/xiaomi/miuicamera; \
+
 export TZ=Asia/Atyrau
 
 # Building: AxionAOSP
