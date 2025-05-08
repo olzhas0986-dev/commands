@@ -2,7 +2,9 @@
 
 rm -rf .repo/local_manifests; \
 
-#/opt/crave/resync.sh; \
+repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs; \
+
+/opt/crave/resync.sh; \
 
 rm -rf out/target/product/munch && rm -rf device/xiaomi/munch && rm -rf device/xiaomi/sm8250-common && rm -rf kernel/xiaomi/sm8250; \
 rm -rf vendor/xiaomi/munch && rm -rf vendor/xiaomi/sm8250-common && rm -rf hardware/xiaomi && rm -rf vendor/xiaomi/munch-firmware; \
@@ -18,7 +20,7 @@ git clone https://gitlab.com/rik-x777/vendor_xiaomi_sm8250-common vendor/xiaomi/
 
 git clone https://gitlab.com/rik-x777/vendor_xiaomi_munch-firmware vendor/xiaomi/munch-firmware; \
 
-git clone https://github.com/Pureline-Kernel/pure_xiaomi_sm8250.git kernel/xiaomi/sm8250; \
+git clone https://github.com/olzhas0986-dev/kernel_xiaomi_munch.git kernel/xiaomi/sm8250; \
 
 git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi; \
 
