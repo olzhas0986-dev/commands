@@ -28,7 +28,7 @@ git clone https://github.com/olzhas0986-dev/kernel_xiaomi_sm8250 kernel/xiaomi/m
 
 git clone https://github.com/munch-devs/android_vendor_xiaomi_munch.git vendor/xiaomi/munch; \
 
-git clone https://github.com/munch-devs/hardware_xiaomi.git -b vic hardware/xiaomi; \
+git clone https://github.com/munch-devs/android_hardware_xiaomi.git -b vic hardware/xiaomi; \
 
 git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera.git -b vic vendor/xiaomi/miuicamera; \
 
