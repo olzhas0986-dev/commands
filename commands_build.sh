@@ -2,7 +2,8 @@
 
 rm -rf .repo/local_manifests; \
 
-repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs; \
+repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 15 -g default,-mips,-darwin,-notdefault; \
+#repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs; \
 
 /opt/crave/resync.sh; \
 
@@ -34,5 +35,5 @@ export TZ=Asia/Atyrau
 
 # Building: AxionAOSP
 . build/envsetup.sh; \
-lunch lineage_munch-bp1a-userdebug; \
+lunch infinity_munch-userdebug; \
 mka bacon #mmmm bacon 
