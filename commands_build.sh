@@ -21,7 +21,7 @@ git clone https://gitlab.com/rik-x777/vendor_xiaomi_sm8250-common vendor/xiaomi/
 
 git clone https://gitlab.com/rik-x777/vendor_xiaomi_munch-firmware vendor/xiaomi/munch-firmware; \
 
-git clone https://github.com/olzhas0986-dev/kernel_xiaomi_munch.git kernel/xiaomi/sm8250; \
+git clone https://github.com/Pureline-Kernel/pure_xiaomi_sm8250.git kernel/xiaomi/sm8250; \
 
 git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi; \
 
