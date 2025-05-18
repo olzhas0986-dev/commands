@@ -4,7 +4,8 @@ rm -rf .repo/local_manifests; \
 
 #repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 15 -g default,-mips,-darwin,-notdefault; \
 #repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs; \
-repo init -u https://github.com/RisingOS-Revived/android -b qpr2 --git-lfs; \
+#repo init -u https://github.com/RisingOS-Revived/android -b qpr2 --git-lfs; \
+repo init -u https://github.com/ProjectMatrixx/android.git -b 15.0 --git-lfs; \
 
 /opt/crave/resync.sh; \
 
@@ -22,7 +23,7 @@ git clone https://gitlab.com/rik-x777/vendor_xiaomi_sm8250-common vendor/xiaomi/
 
 git clone https://gitlab.com/rik-x777/vendor_xiaomi_munch-firmware vendor/xiaomi/munch-firmware; \
 
-git clone https://gitlab.com/rik-x777/kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250; \
+git clone https://github.com/olzhas0986-dev/pure_xiaomi_sm8250 kernel/xiaomi/sm8250; \
 
 git clone https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi; \
 
@@ -36,6 +37,8 @@ export TZ=Asia/Atyrau
 export BUILD_USERNAME=olzhas0986
 
 # Building
-. build/envsetup.sh; \
-riseup munch userdebug
-rise b
+#. build/envsetup.sh; \
+#riseup munch userdebug
+#rise b
+. build/envsetup.sh
+brunch munch
