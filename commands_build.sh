@@ -23,7 +23,7 @@ git clone https://github.com/munch-devs/android_vendor_xiaomi_munch.git vendor/x
 
 #git clone https://gitlab.com/rik-x777/vendor_xiaomi_munch-firmware vendor/xiaomi/munch-firmware; \
 
-git clone https://github.com/olzhas0986-dev/pure_xiaomi_sm8250 kernel/xiaomi/sm8250; \
+git clone https://github.com/munch-devs/kernel_xiaomi_sm8250.git kernel/xiaomi/munch; \
 
 git clone https://github.com/munch-devs/android_hardware_xiaomi.git hardware/xiaomi; \
 
