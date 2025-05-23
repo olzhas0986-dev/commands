@@ -34,7 +34,10 @@ git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX packages/app
 git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera vendor/xiaomi/miuicamera; \
 
 export TZ=Asia/Atyrau
-#export BUILD_USERNAME=olzhas
+export BUILD_USERNAME=olzhas0986
+export BUILD_HOSTNAME=crave
+export KBUILD_BUILD_USER=olzhas0986
+export KBUILD_BUILD_HOST=dev
 
 # Building
 . build/envsetup.sh; \
