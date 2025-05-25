@@ -42,8 +42,10 @@ export KBUILD_BUILD_HOST=dev
 
 # Building
 . build/envsetup.sh; \
-lunch lineage_munch-user; \
-mka bacon
+#lunch lineage_munch-user; \
+#mka bacon
 #riseup munch userdebug
 #rise b
 #brunch munch
+lunch lineage_munch-bp1a-userdebug; \
+mka bacon
