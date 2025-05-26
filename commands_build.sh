@@ -33,8 +33,3 @@ export KBUILD_BUILD_HOST=dev
 . build/envsetup.sh; \
 riseup munch userdebug; \
 rise b; \
-
-cd device/xiaomi/munch && rm -rf lineage_munch.mk && mv gapps.txt lineage_munch.mk && cd ../../..; \
-. build/envsetup.sh; \
-riseup munch userdebug; \
-rise b
