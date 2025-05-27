@@ -2,7 +2,7 @@
 
 rm -rf .repo/local_manifests; \
 
-repo init -u https://github.com/RisingOS-Revived/android -b qpr2 --git-lfs; \
+repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs; \
 
 /opt/crave/resync.sh; \
 
@@ -31,5 +31,5 @@ export KBUILD_BUILD_USER=olzhas0986
 export KBUILD_BUILD_HOST=dev
 
 . build/envsetup.sh; \
-riseup munch userdebug; \
-rise b; \
+lunch lineage_munch-bp1a-userdebug; \
+m evolution
