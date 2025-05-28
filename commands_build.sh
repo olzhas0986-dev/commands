@@ -2,7 +2,7 @@
 
 rm -rf .repo/local_manifests; \
 
-repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs; \
+repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs; \
 
 /opt/crave/resync.sh; \
 
@@ -20,7 +20,6 @@ rm -rf packages/apps/ViPER4AndroidFX; \
 
 git clone https://github.com/olzhas0986-dev/hdzung_device_xiaomi_munch.git device/xiaomi/munch; \
 git clone https://github.com/munch-devs/android_vendor_xiaomi_munch.git vendor/xiaomi/munch; \
-git clone https://gitlab.com/rik-x777/vendor_xiaomi_munch-firmware vendor/xiaomi/munch-firmware; \
 git clone https://github.com/munch-devs/kernel_xiaomi_sm8250.git kernel/xiaomi/munch; \
 git clone https://github.com/munch-devs/android_hardware_xiaomi.git hardware/xiaomi; \
 git clone https://github.com/PocoF3Releases/packages_resources_devicesettings packages/resources/devicesettings; \
@@ -31,5 +30,4 @@ export KBUILD_BUILD_USER=olzhas0986
 export KBUILD_BUILD_HOST=dev
 
 . build/envsetup.sh; \
-lunch lineage_munch-bp1a-userdebug; \
-m evolution
+brunch munch
