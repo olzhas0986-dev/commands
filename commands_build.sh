@@ -25,9 +25,7 @@ git clone https://github.com/munch-devs/android_hardware_xiaomi.git hardware/xia
 git clone https://github.com/PocoF3Releases/packages_resources_devicesettings packages/resources/devicesettings; \
 git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX packages/apps/ViPER4AndroidFX; \
 git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera vendor/xiaomi/miuicamera; \
-
-export KBUILD_BUILD_USER=olzhas0986
-export KBUILD_BUILD_HOST=dev
+git clone https://github.com/CannedShroud/android_packages_apps_KProfiles packages/apps/KProfiles ; \
 
 . build/envsetup.sh; \
 brunch munch
