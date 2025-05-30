@@ -18,6 +18,7 @@ rm -rf vendor/xiaomi/munch-firmware; \
 rm -rf vendor/xiaomi/miuicamera; \
 rm -rf packages/resources/devicesettings; \
 rm -rf packages/apps/ViPER4AndroidFX; \
+rm -rf vendor_gms; \
 
 git clone https://github.com/olzhas0986-dev/hdzung_device_xiaomi_munch.git device/xiaomi/munch; \
 git clone https://github.com/munch-devs/android_vendor_xiaomi_munch.git vendor/xiaomi/munch; \
@@ -26,7 +27,6 @@ git clone https://github.com/munch-devs/android_hardware_xiaomi.git hardware/xia
 git clone https://github.com/PocoF3Releases/packages_resources_devicesettings packages/resources/devicesettings; \
 git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX packages/apps/ViPER4AndroidFX; \
 git clone https://codeberg.org/munch-devs/android_vendor_xiaomi_miuicamera vendor/xiaomi/miuicamera; \
-git clone https://gitlab.com/pixelos-aosp/vendor_gms; \
 
 source build/envsetup.sh
 breakfast munch
